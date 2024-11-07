@@ -84,3 +84,15 @@ http://localhost:3333#/child1
 - ❎ 主应用和子应用 child1 均加载相同的微模块渲染，切换子应用 child1=》child2 时，会卸载掉 child1 中的微模块样式，导致主应用渲染的微模块样式丢失
 
 **结论：在 icestark 微前端框架中，通过 @ice/stark-module 加载渲染微模块，只能在各个子应用中加载使用，不能在主应用和子应用同时使用相同的微模块。**
+
+## 参考资料
+
+- https://juejin.cn/post/7133153790152146981
+- https://github.com/alibaba/ice/issues/4900
+- https://maxkim-j.github.io/en/posts/module-federation-concepts/
+- https://juejin.cn/post/6987998229485289486
+- https://v2.ice.work/docs/guide/about
+- https://micro-frontends.ice.work/docs/guide
+- https://fossies.org/linux/webpack/examples/module-federation/README.md
+- https://github.com/ice-lab/icestark/blob/mf-modules/packages/icestark-mf-module/src/index.ts
+- https://github.com/module-federation/module-federation-examples
